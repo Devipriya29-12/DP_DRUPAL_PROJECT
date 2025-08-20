@@ -1,0 +1,7 @@
+entity.queue_content_entity.settings:
+  path: 'admin/structure/queue-content-entity'
+  defaults:
+    _form: '\Drupal\queue_content_entity\Form\QueueContentEntitySettingsForm'
+    _title: 'Queue content entity'
+  requirements:
+    _permission: 'administer queue_content_entity'

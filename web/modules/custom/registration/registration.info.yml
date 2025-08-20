@@ -1,0 +1,4 @@
+name: Registration
+description: Custom reqistration module with CRUD operation.
+core_version_requirement: ^10
+type: module

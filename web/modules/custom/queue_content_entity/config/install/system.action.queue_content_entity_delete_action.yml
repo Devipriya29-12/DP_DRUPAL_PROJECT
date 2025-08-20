@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - queue_content_entity
+id: queue_content_entity_delete_action
+label: 'Delete queue content entities'
+type: queue_content_entity
+plugin: entity:delete_action:queue_content_entity
+configuration: {  }

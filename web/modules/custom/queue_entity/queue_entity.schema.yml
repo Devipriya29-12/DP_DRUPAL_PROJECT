@@ -1,0 +1,17 @@
+queue_entity:
+  type: entity
+  description: 'Stores Queue entity data.'
+  fields:
+    id:
+      type: serial
+      unsigned: true
+      not null: true
+    name:
+      type: varchar
+      length: 255
+      not null: true
+    status:
+      type: int
+      size: tiny
+      not null: true
+      default: 1

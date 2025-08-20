@@ -1,0 +1,35 @@
+registration.registration_controller_display:
+  path: '/registration'
+  defaults:
+    _controller: '\Drupal\registration\Controller\RegistrationController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+
+registration.registration_form:
+  path: '/registration/form/registration'
+  defaults:
+    _form: '\Drupal\registration\Form\RegistrationForm'
+    _title: 'RegistrationForm'
+  requirements:
+    _access: 'TRUE'
+  
+
+registration.display_table_controller_display:
+  path: '/registration/hello/table'
+  defaults:
+    _controller: '\Drupal\registration\Controller\DisplayRegistrationController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+
+
+
+registration.delete_form:
+  path: '/registration/form/delete/{cid}'
+  defaults:
+    _form: '\Drupal\registration\Form\DeleteForm'
+    _title: 'DeleteForm'
+  requirements:
+    _access: 'TRUE'
+  

@@ -1,0 +1,11 @@
+queues.collection:
+  title: 'Queues List'
+  route_name: queues.collection
+  description: 'List queues'
+  parent: system.admin_structure
+  weight: 10
+queues.admin.structure.settings:
+  title: Queues Settings
+  description: 'Configure Queue`entity'
+  route_name:  queues.queue_settings
+  parent: system.admin_structure

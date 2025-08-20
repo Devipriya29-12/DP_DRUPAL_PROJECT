@@ -1,0 +1,10 @@
+entity.queue_entity.edit_form:
+  route_name: entity.queue_entity.edit_form
+  group: queue_entity
+  title: 'Edit'
+
+entity.queue_entity.delete_form:
+  route_name: entity.queue_entity.delete_form
+  group: queue_entity
+  title: 'Delete'
+  weight: 10

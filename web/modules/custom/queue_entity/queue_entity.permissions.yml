@@ -1,0 +1,3 @@
+administer queue_entity:
+  title: 'Administer queue entities'
+  restrict access: true

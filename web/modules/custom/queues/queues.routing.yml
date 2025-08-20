@@ -1,0 +1,63 @@
+# Route name can be used in several places; e.g. links, redirects, and local
+# actions.
+queues.canonical:
+  path: '/queues/{queues}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the contact entity
+    _entity_view: 'queues'
+    _title: 'View Content'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'queues.view'
+
+
+queues.collection:
+  path: '/queues/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the contact entity.
+    _entity_list: 'queues'
+    _title: 'Queue List'
+  requirements:
+
+# Checks for permission directly.
+    _permission: 'administer queues entity'
+
+
+queues.queue_add:
+  path: '/queues/add'
+  defaults:
+  # Calls the form.add controller, defined in the contact entity.
+    _entity_form: queues.add
+    _title: 'Add queue'
+  requirements:
+    _entity_create_access: 'queues'
+
+
+queues.edit_form:
+  path: '/queues/{queue}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the contact entity.
+    _entity_form: queues.edit
+    _title: 'Edit queue'
+  requirements:
+    _entity_access: 'queues.edit'
+
+
+queues.delete_form:
+  path: '/queues/{queue}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the contact entity.
+    _entity_form: queue.delete
+    _title: 'Delete Queue'
+  requirements:
+    _entity_access: 'queue.delete'
+
+
+queues.queue_settings:
+  path: 'admin/structure/queues_settings'
+  defaults:
+
+    _form: '\Drupal\queues\Form\QueueSettingsForm'
+    _title: 'Queue Settings'
+  requirements:
+    _permission: 'administer queues entity'

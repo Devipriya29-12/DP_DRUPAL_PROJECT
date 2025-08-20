@@ -1,0 +1,11 @@
+entity.queue_entity.settings:
+  title: 'Queue entity'
+  description: 'Configure a Queue entity entity type.'
+  route_name:  entity.queue_entity.settings
+  parent: system.admin_structure
+
+entity.queue_entity.collection:
+  title: 'Queue entities'
+  description: 'List of queue entities.'
+  route_name: entity.queue_entity.collection
+  parent: system.admin_content

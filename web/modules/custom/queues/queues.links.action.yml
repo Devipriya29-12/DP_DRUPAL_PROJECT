@@ -1,0 +1,11 @@
+# All action links for this module
+
+queues.queue_add:
+  # Which route will be called by the link
+  route_name: cqueues.queue_add
+  title: 'Add Queue'
+
+ # Where will the link appear, defined by route name.
+  appears_on:
+    - queues.queue.collection
+    - queues.queue.canonical

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - queue_content_entity
+id: queue_content_entity_save_action
+label: 'Save queue content entities'
+type: queue_content_entity
+plugin: entity:save_action:queue_content_entity
+configuration: {  }

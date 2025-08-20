@@ -1,0 +1,35 @@
+queue.queue_controller_display:
+  path: '/queue'
+  defaults:
+    _controller: '\Drupal\queue\Controller\QueueController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+
+queue.queue_form:
+  path: '/queue/form/queue'
+  defaults:
+    _form: '\Drupal\queue\Form\QueueForm'
+    _title: 'QueueForm'
+  requirements:
+    _access: 'TRUE'
+  
+
+queue.display_table_controller_display:
+  path: '/queue/hello/table'
+  defaults:
+    _controller: '\Drupal\queue\Controller\DisplayQueueController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+
+
+
+queue.delete_form:
+  path: '/queue/form/delete/{cid}'
+  defaults:
+    _form: '\Drupal\queue\Form\DeleteForm'
+    _title: 'DeleteForm'
+  requirements:
+    _access: 'TRUE'
+  

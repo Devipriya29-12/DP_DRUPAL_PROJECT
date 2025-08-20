@@ -1,0 +1,4 @@
+name: Queues
+description: Custom queue entity provides CRUD operation.
+core_version_requirement: ^10
+type: module
